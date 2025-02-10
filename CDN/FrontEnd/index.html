@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Caching System</title>
+  <link rel="stylesheet" href="style.css"> <!-- Correct path to CSS -->
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Content Caching and Fetching System</h1>
+    </header>
+
+    <section class="content">
+      <div class="queue">
+        <h2>Content Queue</h2>
+        <input type="number" id="contentID" placeholder="Enter Content ID" min="1">
+        <button onclick="enqueueContent()">Enqueue Content</button>
+        <ul id="contentQueueList">
+          <!-- Queue Items will be dynamically added here -->
+        </ul>
+      </div>
+
+      <div class="cache">
+        <h2>Cache Status</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Index</th>
+              <th>Content</th>
+            </tr>
+          </thead>
+          <tbody id="cacheTable">
+            <!-- Cache items will be displayed here -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Content Caching System</p>
+    </footer>
+  </div>
+
+  <!-- Correct path to JavaScript file -->
+  <script src="app.js"></script>
+</body>
+</html>
